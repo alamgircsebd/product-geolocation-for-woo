@@ -3,7 +3,7 @@
 namespace ProductGeolocationForWoo;
 
 /**
- * Assets class
+ * Geolocation class
  *
  * @since 1.0.0
  */

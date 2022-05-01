@@ -5,7 +5,7 @@ namespace ProductGeolocationForWoo;
 use WC_Product;
 
 /**
- * Assets class
+ * Geolocation product class
  *
  * @since 1.0.0
  */
@@ -25,9 +25,7 @@ class PGFW_Geolocation_Product {
         }
 
         add_filter( 'woocommerce_product_tabs', [ $this, 'add_custom_product_tabs' ], 10 );
-    }
-
-    
+    }    
 
     /**
      * Add the custom product tab to the front-end single product page
