@@ -1,0 +1,32 @@
+{
+  "name": "alamgir/product-geolocation-for-woo",
+  "description": "Set your WooCommerce products location wise. Single product page locaton tabs, shop page search location wise.",
+  "type": "wordpress-plugin",
+  "license": "GPL2",
+  "authors": [
+    {
+      "name": "Alamgir",
+      "email": "alamgircse.bd@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require-dev": {
+    "wp-coding-standards/wpcs": "dev-master",
+    "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+    "tareq1988/wp-php-cs-fixer": "dev-master",
+    "phpcompatibility/phpcompatibility-wp": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "ProductGeolocationForWoo\\": "includes/"
+    }
+  },
+  "scripts": {
+    "phpcs": [
+      "phpcs -p -s"
+    ],
+    "phpcbf": [
+      "phpcbf -p"
+    ]
+  }
+}
