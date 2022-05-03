@@ -2,8 +2,8 @@
 **Contributors:** [alamgircsebd](https://profiles.wordpress.org/alamgircsebd/)  
 **Tags:** woocommerce, product-geolocation, wc-geolocation, geolocation, woocommerce-geolocation  
 **Requires at least:** 4.4  
-**Tested up to:** 5.5.3  
-**Requires PHP:** 5.6  
+**Tested up to:** 5.9.3  
+**Requires PHP:** 7.0  
 **Stable tag:** 1.0.0  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
