@@ -1,1 +1,0 @@
-<li class='attribute_options wc_product_geolocation_panel_tab'><a href='#product-geolocation-for-woo-tabs-data'><span><?php esc_html_e( 'Geolocation', 'product-geolocation-for-woo' ); ?></span></a></li>
