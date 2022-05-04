@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Product Geolocation for Woo 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wedevs.com/contact/\n"
-"POT-Creation-Date: 2022-05-03 16:54:05+00:00\n"
+"POT-Creation-Date: 2022-05-04 08:34:54+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -50,8 +50,12 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
-#: includes/Admin/PGFW_Menus.php:69 includes/Admin/PGFW_Menus.php:93
+#: includes/Admin/PGFW_Menus.php:69 includes/Admin/PGFW_Menus.php:111
 msgid "Settings"
+msgstr ""
+
+#: includes/Admin/PGFW_Menus.php:93
+msgid "How get start the plugin?"
 msgstr ""
 
 #: includes/Admin/SettingsFields.php:23
@@ -139,42 +143,58 @@ msgstr ""
 msgid "Location map show on shop page."
 msgstr ""
 
-#: includes/Admin/SettingsFields.php:133 includes/Admin/SettingsFields.php:157
+#: includes/Admin/SettingsFields.php:133
+msgid "Enable search (Beta)"
+msgstr ""
+
+#: includes/Admin/SettingsFields.php:134
+msgid "Enable search option on shop page."
+msgstr ""
+
+#: includes/Admin/SettingsFields.php:140 includes/Admin/SettingsFields.php:171
 msgid "Unauthorized Message"
 msgstr ""
 
-#: includes/Admin/SettingsFields.php:134 includes/Admin/SettingsFields.php:158
+#: includes/Admin/SettingsFields.php:141 includes/Admin/SettingsFields.php:172
 msgid "Not logged in users will see this message"
 msgstr ""
 
-#: includes/Admin/SettingsFields.php:143
+#: includes/Admin/SettingsFields.php:150
 msgid "Product Page"
 msgstr ""
 
-#: includes/Admin/SettingsFields.php:144
+#: includes/Admin/SettingsFields.php:151
 msgid "Location map show on single product page tab."
 msgstr ""
 
-#: includes/Admin/SettingsFields.php:150
+#: includes/Admin/SettingsFields.php:157
 msgid "Set Default Address"
 msgstr ""
 
-#: includes/Admin/SettingsFields.php:151
+#: includes/Admin/SettingsFields.php:158
 msgid "Set default address until the location is set on the individual product."
 msgstr ""
 
-#: includes/Admin/SettingsFields.php:566
+#: includes/Admin/SettingsFields.php:164
+msgid "Product Tab Label"
+msgstr ""
+
+#: includes/Admin/SettingsFields.php:165
+msgid "Set product tab label here."
+msgstr ""
+
+#: includes/Admin/SettingsFields.php:167
+#: includes/PGFW_Geolocation_Product.php:50
+#: templates/html-geolocation-for-shop.php:6
+msgid "Location"
+msgstr ""
+
+#: includes/Admin/SettingsFields.php:584
 msgid "Choose File"
 msgstr ""
 
 #: includes/PGFW_Geolocation.php:20
 msgid "New York State, USA"
-msgstr ""
-
-#: includes/PGFW_Geolocation_Product.php:56
-#: includes/PGFW_Geolocation_Shop.php:130
-#: templates/html-geolocation-for-shop.php:5
-msgid "Location"
 msgstr ""
 
 #: templates/admin/product-panel-tab.php:1
@@ -185,11 +205,11 @@ msgstr ""
 msgid "Set Product Geolocation"
 msgstr ""
 
-#: templates/html-geolocation-for-shop.php:9
+#: templates/html-geolocation-for-shop.php:10
 msgid "Radius"
 msgstr ""
 
-#: templates/html-geolocation-for-shop.php:15
+#: templates/html-geolocation-for-shop.php:16
 msgid "Search"
 msgstr ""
 

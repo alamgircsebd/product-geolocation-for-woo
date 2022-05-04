@@ -31,7 +31,40 @@ class PGFW_Settings {
 
         $html .= '</h2>';
 
-        echo $html;
+        echo wp_kses( $html, $this->html_allow() );
+    }
+
+    /**
+     * Return html allow args
+     *
+     * @since 1.0.0
+     *
+     * @return array
+     */
+    public function html_allow() {
+        return [
+            'div' => [
+                'class' => [],
+                'id'    => [],
+            ],
+            'p' => [
+                'class' => [],
+            ],
+            'a'    => [
+                'target' => [],
+                'class'  => [],
+                'id'     => [],
+                'href'   => [],
+            ],
+            'span'    => [
+                'class'  => [],
+                'id'     => [],
+            ],
+            'h2'    => [
+                'class'  => [],
+                'id'     => [],
+            ],
+        ];
     }
 
     /**
@@ -79,7 +112,7 @@ class PGFW_Settings {
         ?>
         <div class="metabox-holder">
             <?php foreach ( product_geolocation_for_woo()->setting_field->settings_sections() as $form ) { ?>
-                <div id="<?php echo $form['id']; ?>" class="group" style="display: none;">
+                <div id="<?php echo esc_attr( $form['id'] ); ?>" class="group" style="display: none;">
                     <form method="post" action="options.php">
                         <?php
                         do_action( 'wsa_form_top_' . $form['id'], $form );
@@ -97,49 +130,6 @@ class PGFW_Settings {
             <?php } ?>
         </div>
 
-        <script>
-            jQuery(document).ready(function($) {
-                $('.group').hide();
-                var activetab = '';
-                if (typeof(localStorage) != 'undefined' ) {
-                    activetab = localStorage.getItem("activetab");
-                }
-                if (activetab != '' && $(activetab).length ) {
-                    $(activetab).fadeIn();
-                } else {
-                    $('.group:first').fadeIn();
-                }
-                $('.group .collapsed').each(function(){
-                    $(this).find('input:checked').parent().parent().parent().nextAll().each(
-                        function(){
-                            if ($(this).hasClass('last')) {
-                                $(this).removeClass('hidden');
-                                return false;
-                            }
-                            $(this).filter('.hidden').removeClass('hidden');
-                        });
-                });
-
-                if (activetab != '' && $(activetab + '-tab').length ) {
-                    $(activetab + '-tab').addClass('nav-tab-active');
-                } else {
-                    $('.nav-tab-wrapper a:first').addClass('nav-tab-active');
-                }
-                $('.nav-tab-wrapper a').click(function(evt) {
-                    $('.nav-tab-wrapper a').removeClass('nav-tab-active');
-                    $(this).addClass('nav-tab-active').blur();
-                    var clicked_group = $(this).attr('href');
-                    if (typeof(localStorage) != 'undefined' ) {
-                        localStorage.setItem("activetab", $(this).attr('href'));
-                    }
-                    $('.group').hide();
-                    $(clicked_group).fadeIn();
-                    evt.preventDefault();
-                });
-
-            });
-        </script>
-
         <style type="text/css">
             .form-table th { padding: 20px 10px; }
             #wpbody-content .metabox-holder { padding-top: 5px; min-height: 400px;}
@@ -147,4 +137,3 @@ class PGFW_Settings {
         <?php
     }
 }
-

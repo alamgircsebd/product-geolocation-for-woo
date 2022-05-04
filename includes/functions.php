@@ -17,7 +17,7 @@ function product_geolocation_for_woo_get_option( $option, $section, $default = '
     $options = get_option( $section );
 
     if ( isset( $options[ $option ] ) ) {
-        return $options[ $option ];
+        return empty( $options[ $option ] ) ? $default : $options[ $option ];
     }
 
     return $default;

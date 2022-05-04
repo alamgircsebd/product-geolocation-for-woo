@@ -129,6 +129,13 @@ class SettingsFields {
                         'default' => 'on',
                     ],
                     [
+                        'name'    => 'enable_search',
+                        'label'   => __( 'Enable search (Beta)', 'product-geolocation-for-woo' ),
+                        'desc'    => __( 'Enable search option on shop page.', 'product-geolocation-for-woo' ),
+                        'type'    => 'checkbox',
+                        'default' => 'off',
+                    ],
+                    [
                         'name'  => 'un_auth_msg',
                         'label' => __( 'Unauthorized Message', 'product-geolocation-for-woo' ),
                         'desc'  => __( 'Not logged in users will see this message', 'product-geolocation-for-woo' ),
@@ -151,6 +158,13 @@ class SettingsFields {
                         'desc'    => __( 'Set default address until the location is set on the individual product.', 'product-geolocation-for-woo' ),
                         'type'    => 'checkbox',
                         'default' => 'off',
+                    ],
+                    [
+                        'name'  => 'single_product_tab_label',
+                        'label' => __( 'Product Tab Label', 'product-geolocation-for-woo' ),
+                        'desc'  => __( 'Set product tab label here.' ),
+                        'type'    => 'text',
+                        'default' => __( 'Location', 'product-geolocation-for-woo' ),
                     ],
                     [
                         'name'  => 'un_auth_msg',
@@ -249,6 +263,10 @@ class SettingsFields {
             'fieldset' => [],
             'label'    => [
                 'for' => [],
+            ],
+            'a'    => [
+                'target' => [],
+                'href' => [],
             ],
             'input' => [
                 'type'               => [],

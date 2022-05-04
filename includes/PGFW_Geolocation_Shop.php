@@ -64,6 +64,7 @@ class PGFW_Geolocation_Shop {
                 'distance'        => product_geolocation_for_woo()->geolocation->global_radius_max(),
                 'radius_unit'     => product_geolocation_for_woo()->geolocation->global_radius_unit(),
                 'is_shop_page'    => true,
+                'enable_search'   => product_geolocation_for_woo_get_option( 'enable_search', 'wp_wpg_admin_settings_shop_page', 'off' ),
             )
         );
     }
@@ -114,26 +115,5 @@ class PGFW_Geolocation_Shop {
                 'info'          => wp_json_encode( $info ),
             )
         );
-    }
-
-    /**
-     * Add the custom product tab to the front-end single product page
-     *
-     * @since 1.0.0
-     *
-     * @param array $tabs
-     *
-     * @return array
-     */
-    public function add_custom_product_tabs( $tabs ) {
-        $tabs[ 'product-geolocation-for-woo-gmap' ] = array(
-            'title'    => __( 'Location', 'product-geolocation-for-woo' ),
-            'priority' => 20,
-            'callback' => [ $this, 'custom_product_tabs_panel_content' ],
-        );
-
-        $tabs = apply_filters( 'product-geolocation-for-woo_show_on_product_tabs', $tabs, $product );
-
-        return $tabs;
     }
 }

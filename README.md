@@ -8,11 +8,11 @@
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
-Product Geolocation for Woo
+Product Geolocation for WooCommerce
 
 ## Description ##
 
-Set your WooCommerce products location wise. Single product page locaton tabs, shop page search location wise.
+Product Geolocation for WooCommerce help you manage your store products locations. Customers can see the the products locations from shop and product single page.
 
 ### Basic Features ###
 
@@ -35,16 +35,13 @@ A.  Yes
 
 ## Screenshots ##
 
-1. Screenshots 1
-2. Screenshots 2
-3. Screenshots 3
+1. Admin setting page
+2. Admin product add/edit page
+3. Shop page
+4. Single product page
 
 ## Changelog ##
 
-### v1.0.0 -> 2nd May, 2022 ###
+### v1.0.0 -> 4th May, 2022 ###
 
 Initial version released
-
-## Upgrade Notice ##
-
-Nothing here right now

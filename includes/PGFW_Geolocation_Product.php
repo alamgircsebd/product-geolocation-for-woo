@@ -47,13 +47,14 @@ class PGFW_Geolocation_Product {
 
         $gmap_latitude  = $product->get_meta( '_wprwcp_product_gmap_latitude', true );
         $gmap_longitude = $product->get_meta( '_wprwcp_product_gmap_longitude', true );
+        $title          = product_geolocation_for_woo_get_option( 'single_product_tab_label', 'wp_wpg_admin_settings_single_product', __( 'Location', 'product-geolocation-for-woo' ) );
 
         if ( ( empty( $gmap_latitude ) || empty( $gmap_longitude ) ) && 'off' === $set_default_address ) {
             return $tabs;
         }
 
         $tabs[ 'product-geolocation-for-woo-gmap' ] = array(
-            'title'    => __( 'Location', 'product-geolocation-for-woo' ),
+            'title'    => $title,
             'priority' => 20,
             'callback' => [ $this, 'custom_product_tabs_panel_content' ],
         );

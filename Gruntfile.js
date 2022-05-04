@@ -58,9 +58,6 @@ module.exports = function(grunt) {
     concat: {
       all_js: {
         files: {
-          '<%= dirs.js %>/product-geolocation-for-woo.js': [
-            '<%= dirs.devJsSrc %>/script.js'
-          ],
           '<%= dirs.js %>/product-geolocation-for-woo-gmap.js': [
             '<%= dirs.devJsSrc %>/google-map-scripts.js'
           ],
@@ -78,12 +75,6 @@ module.exports = function(grunt) {
           '<%= dirs.js %>/product-geolocation-for-woo-gmap-admin.js': [
             '<%= dirs.devJsSrc %>/google-map-admin-scripts.js'
           ]
-        }
-      },
-
-      flot: {
-        files: {
-          '<%= dirs.js %>/flot-all.min.js': '<%= dirs.vendors %>/flot/*.js'
         }
       }
     },
